@@ -5,10 +5,11 @@ Use a ws2812 RGB LED as a status indicator.
 ## To enable & set up the LED:
 
     -D RGBStat                  ; Enables the library
-    -D STATUS_LED_PIN=D5        ; Set the LED data pin (GPIO of your MCU)
-                                ; defaults to D5 if undefined
+    -D STATUS_LED_PIN=D5        ; Set the LED data GPIO pin
+                                ; Either actual GPIO # or Arduino designator...
+                                ; Defaults to D5 if undefined
     -D STATUS_LED_BRIGHT=100    ; Set brightness of the LED (0-255)
-                                ; defaults to 50 if undefined
+                                ; Defaults to 50 if undefined
 
 ## The Functions
 
