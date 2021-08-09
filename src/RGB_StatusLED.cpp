@@ -22,6 +22,8 @@ void setup_RGB_StatusLED()
 {
   sprintf(DEBUGtxt, "RGB Status LED on GPIO%d", STATUS_LED_PIN);
   DEBUG_Init(DEBUGtxt);
+  sprintf(DEBUGtxt, "(Brightness level: %d", STATUS_LED_BRIGHT);
+  DEBUG_LineOut(DEBUGtxt);
 
   pixels.begin();
   // pixels.clear();
