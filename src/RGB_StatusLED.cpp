@@ -12,7 +12,7 @@ void RGB_StatusLED(int R, int G, int B);
 #define STATUS_LED_PIN D5
 #endif
 
-#if RGBStat == 1
+#if !defined(RGBStat)
 int Brightness = 50;
 #else
 int Brightness = RGBStat;
