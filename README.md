@@ -2,6 +2,10 @@
 
 Use a ws2812 RGB LED as a status indicator.
 
+## Dependencies
+
+This library uses [TinkerLibs-DEBUG](https://github.com/cdntinker/TinkerLibs-DEBUG)
+
 ## To enable & set up the LED:
 
     -D RGBStat                  ; Enables the library
@@ -16,7 +20,7 @@ Use a ws2812 RGB LED as a status indicator.
 
 ### void setup_RGB_StatusLED();
 
-Initialises the LED.
+Initializes the LED.
 
 ### void RGB_StatusLED(int R, int G, int B);
 
