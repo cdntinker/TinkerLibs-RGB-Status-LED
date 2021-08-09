@@ -13,7 +13,7 @@ void RGB_StatusLED(int R, int G, int B);
 #endif
 
 #if !defined(STATUS_LED_BRIGHT)
-#define STATUS_LED_BRIGHT 50;
+#define STATUS_LED_BRIGHT 50
 #endif
 
 Adafruit_NeoPixel pixels(1, STATUS_LED_PIN, NEO_GRB + NEO_KHZ800);
