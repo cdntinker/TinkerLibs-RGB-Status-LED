@@ -9,7 +9,7 @@ void RGB_StatusLED(int R, int G, int B);
 #include <Adafruit_NeoPixel.h> // For status LED
 
 #if !defined(STATUS_LED_PIN)
-#define STATUS_LED_PIN D5
+#define STATUS_LED_PIN D4
 #endif
 
 #if !defined(STATUS_LED_BRIGHT)
