@@ -7,7 +7,11 @@ void RGB_StatusLED(int R, int G, int B);
 
 /* Status LED */
 #include <Adafruit_NeoPixel.h> // For status LED
-#define STATUS_LED_PIN D4
+
+#if !defined(STATUS_LED_PIN)
+#define STATUS_LED_PIN D5
+#endif
+
 #if RGBStat == 1
 int Brightness = 50;
 #else
