@@ -12,10 +12,8 @@ void RGB_StatusLED(int R, int G, int B);
 #define STATUS_LED_PIN D5
 #endif
 
-#if !defined(RGBStat)
-int Brightness = 50;
-#else
-int Brightness = RGBStat;
+#if !defined(STATUS_LED_BRIGHT)
+#define STATUS_LED_BRIGHT 50;
 #endif
 
 Adafruit_NeoPixel pixels(1, STATUS_LED_PIN, NEO_GRB + NEO_KHZ800);
@@ -27,7 +25,7 @@ void setup_RGB_StatusLED()
 
   pixels.begin();
   // pixels.clear();
-  pixels.setBrightness(Brightness);
+  pixels.setBrightness(STATUS_LED_BRIGHT);
   pixels.show();
 }
 
