@@ -10,6 +10,7 @@ Use a ws2812 RGB LED as a status indicator.
                                 ; Defaults to D5 if undefined
     -D STATUS_LED_BRIGHT=100    ; Set brightness of the LED (0-255)
                                 ; Defaults to 50 if undefined
+(These are platformio.ini `build_flags` entries, but could be done as `#define`s)
 
 ## The Functions
 
