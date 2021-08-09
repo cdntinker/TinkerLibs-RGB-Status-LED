@@ -31,5 +31,3 @@ Sets the colour (R, G, B) of the LED.
 ## Further thoughts
 
 No reason this couldn't be expanded to do more than one Status LED.  (They ARE addressable...)
-
-[This project](https://github.com/ericgu/Fade) may have a clue or 2 for getting rid of the AdaFruit library.
