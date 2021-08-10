@@ -31,3 +31,5 @@ Sets the colour (R, G, B) of the LED.
 ## Further thoughts
 
 No reason this couldn't be expanded to do more than one Status LED.  (They ARE addressable...)
+
+Someone, somewhere has to have published some simple (& properly documented) code to talk to a ws2812 (or string of them) that doesn't include 800,000 lines of un-needed complexity.  Nearly all of what the Adafruit library does is not needed to simply manage a pixel.
